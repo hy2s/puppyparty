@@ -1,9 +1,10 @@
 import "./App.scss";
+import Navigation from "./components/Navigation";
 
 const App = () => {
   return (
-    <div>
-
+    <div>      
+      <Navigation />
     </div>
   );
 };
