@@ -1,11 +1,30 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
-import Sale from "./components/Sale";
+import MainBanner from "./components/MainBanner";
+import Navigation from "./components/Navigation";
+import Categori from "./components/Categori";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import { useState } from "react";
 
 const App = () => {
+  return (
+    <BrowserRouter>
+    <div id="App">
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <MainBanner />
+              <Sale />
+            </>
+          }
+        />
+      </Routes>
+      </div>
+    </BrowserRouter>
+  );
     // 장바구니에 담긴 상품 목록 상태 관리
     const [cartItem, setCartItem] = useState([]);
     /**
