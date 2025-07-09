@@ -1,8 +1,10 @@
-header{
+nav{
+  position: relative;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1520px;
   height: 132px;
   margin: 0 auto;
+  padding: 0 60px;
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -16,6 +18,35 @@ header{
     gap: 2rem;
     font-size: 1.2rem;
     font-weight: bolder;
+    @include tablet{
+      display: none;
+    }
+  }
+  .toggleMenu{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 3rem;
+    right: 6rem;
+    background-color: var(--color-bg);
+    text-align: center;
+    .closeIcon{
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 1.5rem;
+    }
+    h1{
+      margin: 1rem auto;
+      padding: 1rem;
+      font-size: 2rem;
+      font-weight: bolder;
+      border-bottom: 1px solid black;
+    }
+    li{
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
   }
   .headerIcon{
     cursor: pointer;
@@ -23,8 +54,11 @@ header{
     gap: 1.5rem;
     font-size: 1.8rem;
     font-weight: bolder;
-    // .menuIcon{ 
-    //   display: none;
-    // }
+    .menuIcon{
+      opacity: 0;
+      @include tablet{
+        opacity: 1;
+      }
+    }
   }
 }

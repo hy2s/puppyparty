@@ -1,35 +1,61 @@
 import { LuShoppingCart } from "react-icons/lu";
 import { FiSearch } from "react-icons/fi";
 import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const Navigation = () => {
+  // 모바일 버전에서 메뉴 아이콘 클릭시 세로 메뉴 나오는 함수
   const [isOpen, setIsOpen] = useState(false);
-  
+  const menuRef = useRef(null);
+  const sideMenu= ()=>{setIsOpen(prev => !prev)};
+
   // const navigate = useNavigate();
   return (
-    <header>
+    <nav>
       <img 
         // onClick={()=>{navigate('/')}}
         src={`${process.env.PUBLIC_URL}/images/HeaderLogo.png`}
         alt="PuppyParty 상단 로고"
       />
-      <div className="headerMenu">
-        <p>파티용품</p>
-        <p>케이크</p>
-        <p>간식</p>
-        <p>커플의류</p>
-      </div>
+      {/* 메뉴 아이콘 - 태블릿 사이즈 이하에서만 보임 */}
+      {/* 데스크탑 메뉴 */}
+      <ul className="headerMenu">
+        <li>파티용품</li>
+        <li>케이크</li>
+        <li>간식</li>
+        <li>커플의류</li>
+      </ul>
+      {isOpen && (
+        <ul className="toggleMenu">
+          <button
+            className="closeIcon"
+            onClick={sideMenu}
+            aria-label="toggle menu"
+            >
+            <IoClose />
+          </button>
+          <h1>MENU</h1>
+          <li>파티용품</li>
+          <li>케이크</li>
+          <li>간식</li>
+          <li>커플의류</li>
+      </ul>
+      )}
       {/* <div onClick={()=>{navigate('/cart')}}> */}
       <div className="headerIcon">
         <LuShoppingCart />
         <FiSearch />
-        <div className="menuIcon">
+        <button
+          className="menuIcon"
+          onClick={sideMenu}
+          aria-label="toggle menu"
+          >
           <IoMenu />
-        </div>
+        </button>
       </div>
-    </header>
+    </nav>
   );
 };
 

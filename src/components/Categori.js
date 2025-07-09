@@ -14,6 +14,7 @@ const Categori = () => {
             <Card
               key={item.id}
               item={item}
+              isHover={true}
             />
           )
         })

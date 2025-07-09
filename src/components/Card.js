@@ -1,6 +1,7 @@
 
 
 const Card = () => {
+  const products =[]
   return (
     <div>
       
