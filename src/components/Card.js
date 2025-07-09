@@ -1,12 +1,33 @@
+import { useState } from "react";
+import { LuShoppingCart } from "react-icons/lu";
 
-
-const Card = () => {
-  const products =[]
+const Card = ({products}) => {
+  const [isHover,setIsHover] = useState(false);
+  const getImageSrc= ()=>{
+    if(!isHover) return `${process.env.PUBLIC_URL}${image}`;
+    //hover처리
+    if(isHover){
+      return `${process.env.PUBLIC_URL}${image.replace("-1","-2")}`;
+    }
+    return `${process.env.PUBLIC_URL}${image}`;
+  }
+  const {name,description,price,image} = products;
   return (
-    <div>
-      
+    <div className="hoverCard"
+      onMouseEnter={()=>{setIsHover(true)}}
+      onMouseLeave={()=>{setIsHover(false)}}
+    >
+      <div className="card">
+        <img className="card-img" src={getImageSrc()} alt="카드 이미지"/>
+        <p className="card-name">{name}</p>
+        <p className="card-des">{description}</p>
+        <p className="card-price">{`${price}￦`}</p>
+        <div className="card-cart">
+          <LuShoppingCart />
+        </div>
+      </div>
     </div>
-  );
+  );       
 };
 
 export default Card;

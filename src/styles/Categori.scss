@@ -1,4 +1,5 @@
 .categori{
+  color: var(--color-font);
   width: 100%;
   max-width: 1520px;
   height: 132px;
@@ -6,10 +7,10 @@
   padding: 0 60px;
   h1{
     font-family: 'yg-jalnan';
-    font-size: 3rem;
+    font-size: 4rem;
   }
   p{
     font-family: 'NanumSquareNeoBold';
-    font-size: 1.5rem
+    font-size: 2rem
   }
 }

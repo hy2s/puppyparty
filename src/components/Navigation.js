@@ -29,13 +29,11 @@ const Navigation = () => {
       </ul>
       {isOpen && (
         <ul className="toggleMenu">
-          <button
-            className="closeIcon"
-            onClick={sideMenu}
-            aria-label="toggle menu"
-            >
-            <IoClose />
-          </button>
+            <IoClose
+              className="closeIcon"
+              onClick={sideMenu}
+              aria-label="toggle menu"
+            />
           <h1>MENU</h1>
           <li>파티용품</li>
           <li>케이크</li>
@@ -47,13 +45,11 @@ const Navigation = () => {
       <div className="headerIcon">
         <LuShoppingCart />
         <FiSearch />
-        <button
+        <IoMenu 
           className="menuIcon"
           onClick={sideMenu}
           aria-label="toggle menu"
-          >
-          <IoMenu />
-        </button>
+        />
       </div>
     </nav>
   );
