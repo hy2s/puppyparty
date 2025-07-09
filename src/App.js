@@ -6,25 +6,9 @@ import Categori from "./components/Categori";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import { useState } from "react";
+import Sale from "./components/Sale";
 
 const App = () => {
-  return (
-    <BrowserRouter>
-    <div id="App">
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <MainBanner />
-              <Sale />
-            </>
-          }
-        />
-      </Routes>
-      </div>
-    </BrowserRouter>
-  );
     // 장바구니에 담긴 상품 목록 상태 관리
     const [cartItem, setCartItem] = useState([]);
     /**
@@ -81,15 +65,18 @@ const App = () => {
         <BrowserRouter>
             <div id="App">
                 <Routes>
-                    {/* <Route
+                    <Route
                         path="/"
                         element={
                             <>
+                            <Navigation />
+                                <MainBanner />
                                 <Sale />
+                                <Categori />
                                 <Footer />
                             </>
                         }
-                    /> */}
+                    />
                     <Route
                         path="/"
                         element={
