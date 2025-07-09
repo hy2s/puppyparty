@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
+import MainBanner from "./components/MainBanner";
 import Sale from "./components/Sale";
 
 const App = () => {
@@ -10,7 +11,10 @@ const App = () => {
         <Route
           path="/"
           element={
-            <Sale />
+            <>
+              <MainBanner />
+              <Sale />
+            </>
           }
         />
       </Routes>
