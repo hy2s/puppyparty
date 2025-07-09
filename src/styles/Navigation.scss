@@ -1,13 +1,30 @@
 header{
+  width: 100%;
+  max-width: 1440px;
+  height: 132px;
+  margin: 0 auto;
   display: flex;
+  flex: 1;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  .headerCategori{
+  .headerMenu{
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  .headerIcon{
+    cursor: pointer;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    // .menuIcon{ 
+    //   display: none;
+    // }
   }
 }
