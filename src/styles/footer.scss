@@ -1,22 +1,38 @@
 footer {
     height: 500px;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--color-font);
     color: #fff;
     font-size: 20px;
-    .foot-all{
-        width: 80%;
+    @include mobile {
+        height: 700px;
+    }
+    .foot-all {
+        width: 75%;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        @include tablet {
+            display: block;
+            width: 80%;
+        }
+        @include mobile {
+            width: 90%;
+        }
     }
     .nav {
         display: flex;
         gap: 1.5rem;
         margin-bottom: 3rem;
+        @include mobile {
+            display: block;
+            li {
+                margin: 1.5rem 0;
+            }
+        }
     }
     .inf {
         li {
@@ -25,9 +41,11 @@ footer {
     }
     .two {
         img {
-            margin-left: auto;
             margin-bottom: 3rem;
             height: 90px;
+            @include tablet {
+                margin-top: 5rem;
+            }
         }
     }
 }
