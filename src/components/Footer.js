@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <footer>
-            <div className="foot-all">
+            <div className="footer-all">
                 <div className="one">
                     <ul className="nav">
                         <li>회사 소개</li>
