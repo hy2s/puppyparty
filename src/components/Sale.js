@@ -38,8 +38,8 @@ const Sale = () => {
       if (current >= target) {
         current = target;
         clearInterval(interval);
-        setShowConfetti(true); // 🎉 여기서 confetti 실행
-        setTimeout(() => setShowConfetti(false), 10000); // 3초 후 제거
+        setShowConfetti(true); 
+        setTimeout(() => setShowConfetti(false), 10000); // 10초 후 컨페티 제거
       }
       setCount(current);
     }, 1000 / frameRate);
