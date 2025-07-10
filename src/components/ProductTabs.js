@@ -11,7 +11,7 @@ const [activeTab, setActiveTab] = useState('상품정보');
   const renderContent = () => {
     switch (activeTab) {
       case '상품정보':
-        return <p ><img src='/image/review.png"},'></img></p>;
+        return <p ><img src='/image/review.png"},' alt='review'/></p>;
       case '구매후기':
         return <ReviewSection/>
       case '문의사항':
