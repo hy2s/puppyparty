@@ -7,6 +7,8 @@ import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import { useState } from "react";
 import Sale from "./components/Sale";
+import EventSection from "./components/EventSection";
+import ProductPage from "./components/ProductPage";
 import BestProducts from "./components/BestProducts";
 
 const App = () => {
@@ -75,6 +77,7 @@ const App = () => {
                                 <BestProducts />
                                 <Sale />
                                 <Categori />
+                                <EventSection/>
                                 <Footer />
                             </>
                         }
@@ -93,6 +96,8 @@ const App = () => {
                             </>
                         }
                     />
+             {/* 상품 상세페이지 */}
+                <Route path="/product/:id" element={<ProductPage />} />
                 </Routes>
             </div>
         </BrowserRouter>
