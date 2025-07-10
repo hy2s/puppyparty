@@ -11,6 +11,19 @@ import EventSection from "./components/EventSection";
 import ProductPage from "./components/ProductPage";
 
 import BestProducts from "./components/BestProducts";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.scss";
+import MainBanner from "./components/MainBanner";
+import Navigation from "./components/Navigation";
+import Categori from "./components/Categori";
+import Cart from "./components/Cart";
+import Footer from "./components/Footer";
+import { useState } from "react";
+import Sale from "./components/Sale";
+import EventSection from "./components/EventSection";
+import ProductPage from "./components/ProductPage";
+
+import BestProducts from "./components/BestProducts";
 
 const App = () => {
     // 장바구니에 담긴 상품 목록 상태 관리
@@ -97,22 +110,18 @@ const App = () => {
                                 <Footer />
                             </>
                         }
-                    />
-             {/* 상품 상세페이지 */}
-                <Route path="/product/:id" element={<ProductPage />} />
-                </Routes>
-            </div>
+                    /> 
+        {/* 상품 상세페이지 */}
+          <Route path="/product/:id" element={<ProductPage />} />
+      </Routes>
+            
+           
+      </div>
         </BrowserRouter>
     );
 };
 
 export default App;
-
-
-
-
-
-
 
 
 
