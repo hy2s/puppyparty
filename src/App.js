@@ -9,6 +9,7 @@ import { useState } from "react";
 import Sale from "./components/Sale";
 import EventSection from "./components/EventSection";
 import ProductPage from "./components/ProductPage";
+
 import BestProducts from "./components/BestProducts";
 
 const App = () => {
@@ -68,7 +69,7 @@ const App = () => {
         <BrowserRouter>
             <div id="App">
                 <Routes>
-                    <Route
+                     <Route
                         path="/"
                         element={
                             <>
@@ -79,6 +80,7 @@ const App = () => {
                                 <Categori />
                                 <EventSection/>
                                 <Footer />
+                                
                             </>
                         }
                     />
