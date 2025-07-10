@@ -30,11 +30,12 @@ const Cart = ({ cartItem, updateCount, onDelete }) => {
                             <input type="checkbox" checked />
                             <span>전체선택</span>
                         </label>
-                        <p className="cart-count">
+                        <p className="mobile-gift">구매 금액별 사은품</p>
+                        <p className="cart-product">
                             <span>{cartItem.length}</span>개의 상품이 있어요
                         </p>
-                        {/* <hr/> */}
                     </div>
+                    <div className="select-line" />
                     <div className="cart-list">
                         {cartItem.length === 0 ? (
                             // 빈 장바구니
@@ -111,6 +112,8 @@ const Cart = ({ cartItem, updateCount, onDelete }) => {
                         )}
                     </div>
                 </div>
+                {/* tablet, mobile 중간 선 */}
+                <div className="cart-divider"></div>
                 {/* 오른쪽 - 결제 요약 */}
                 <div className="cart-summary">
                     <h2>결제 내역</h2>
@@ -133,6 +136,7 @@ const Cart = ({ cartItem, updateCount, onDelete }) => {
                                 원
                             </li>
                         </ul>
+                        <div className="price-line"></div>
                         <ul className="total-price">
                             <li>총 결제 금액</li>
                             <li>

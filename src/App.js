@@ -65,7 +65,7 @@ const App = () => {
         <BrowserRouter>
             <div id="App">
                 <Routes>
-                    <Route
+                    {/* <Route
                         path="/"
                         element={
                             <>
@@ -76,11 +76,12 @@ const App = () => {
                                 <Footer />
                             </>
                         }
-                    />
+                    /> */}
                     <Route
                         path="/"
                         element={
                             <>
+                                <Navigation />
                                 <Cart
                                     cartItem={cartItem}
                                     updateCount={updateCartItemCount}
