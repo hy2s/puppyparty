@@ -37,7 +37,7 @@
         width: 100%;
         margin-bottom: 165px;
         display: flex;
-        gap: 90px;
+        gap: 50px;
         @include tablet {
             display: block;
         }
@@ -128,6 +128,7 @@
                 background-color: rgba(0, 0, 0, 0.3);
             }
             .cart-list {
+                width: 100%;
                 margin-top: 10px;
                 .empty-cart {
                     padding: 190px 0;
@@ -156,11 +157,93 @@
                         }
                     }
                 }
-                ul {
+
+                .item-info {
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 40px;
                     padding: 30px 0;
                     .item-info-left {
+                        flex: 1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        input {
+                            width: 18px;
+                            height: 18px;
+                            accent-color: var(--color-main);
+                            cursor: pointer;
+                            @include tablet {
+                                appearance: none;
+                                width: 18px;
+                                height: 18px;
+                                border-radius: 2px;
+                                position: relative;
+                                &:checked {
+                                    background-color: var(--color-sub1);
+                                }
+                                &:checked::after {
+                                    content: "";
+                                    position: absolute;
+                                    left: 6.5px;
+                                    top: 1.5px;
+                                    width: 3px;
+                                    height: 10px;
+                                    border: solid #fff;
+                                    border-width: 0 3px 3px 0;
+                                    transform: rotate(40deg);
+                                }
+                            }
+                            @include mobile {
+                                &:checked {
+                                    background-color: var(--color-sub2);
+                                }
+                                &:checked::after {
+                                    left: 7px;
+                                }
+                            }
+                        }
+                        gap: 30px;
+                        img {
+                            width: 140px;
+                        }
                     }
                     .item-info-right {
+                        height: 90px;
+                        flex: 5;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        .item-wrap {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-end;
+                            .item-delete {
+                                display: flex;
+                                justify-content: space-between;
+                                gap: 30px;
+                            }
+                        }
+                        .item-count-wrap {
+                            display: flex;
+                            gap: 5px;
+                            button {
+                                width: 30px;
+                                height: 30px;
+                                background-color: transparent;
+                                border: 1px solid rgba(0, 0, 0, 0.3);
+                            }
+                            .item-count {
+                                width: 30px;
+                                height: 30px;
+                                text-align: center;
+                                line-height: 30px;
+                                background-color: transparent;
+                                border: 1px solid rgba(0, 0, 0, 0.3);
+                            }
+                        }
                     }
                 }
             }
