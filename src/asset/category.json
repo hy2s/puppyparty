@@ -39,21 +39,21 @@
                 "name": "포레스트 쿠키케이크",
                 "description": "당근과 연어가 어우러진 귀여운 생일 쿠키 케이크",
                 "price": 9800,
-                "image": "/images/cake/cake1-1.png"
+                "image": "/images/dogcake/dogcake1-1.png"
             },
             {
                 "product-ID": "cake-02",
                 "name": "블룸 단호박 파티케이크",
                 "description": "단호박 퓨레와 소고기 토핑이 어우러진 플라워 비주얼 파티 케이크",
                 "price": 14500,
-                "image": "/images/cake/cake2-1.png"
+                "image": "/images/dogcake/dogcake2-1.png"
             },
             {
                 "product-ID": "cake-03",
                 "name": "퍼피러브 핑크샌드",
                 "description": "고구마 쿠키에 딸기 크림을 샌드한 러블리한 케이크",
                 "price": 11000,
-                "image": "/images/cake/cake3-1.png"
+                "image": "/images/dogcake/dogcake3-1.png"
             }
         ]
     },

@@ -7,6 +7,7 @@ import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import { useState } from "react";
 import Sale from "./components/Sale";
+import BestProducts from "./components/BestProducts";
 
 const App = () => {
     // 장바구니에 담긴 상품 목록 상태 관리
@@ -71,8 +72,9 @@ const App = () => {
                             <>
                             <Navigation />
                                 <MainBanner />
+                                <BestProducts />
                                 <Sale />
-                                <Categori />
+                                {/* <Categori /> */}
                                 <Footer />
                             </>
                         }
