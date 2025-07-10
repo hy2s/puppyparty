@@ -1,3 +1,4 @@
+import BestProducts from "./components/BestProducts";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import MainBanner from "./components/MainBanner";
@@ -9,6 +10,9 @@ import { useState } from "react";
 import Sale from "./components/Sale";
 import EventSection from "./components/EventSection";
 import ProductPage from "./components/ProductPage";
+
+
+import BestProducts from "./components/BestProducts";
 
 
 const App = () => {
@@ -74,6 +78,7 @@ const App = () => {
                             <>
                             <Navigation />
                                 <MainBanner />
+                                <BestProducts />
                                 <Sale />
                                 <Categori />
                                 <EventSection/>
@@ -86,6 +91,7 @@ const App = () => {
                         path="/"
                         element={
                             <>
+                                <Navigation />
                                 <Cart
                                     cartItem={cartItem}
                                     updateCount={updateCartItemCount}
@@ -106,12 +112,3 @@ const App = () => {
 };
 
 export default App;
-
-
-
-
-
-
-
-
-
