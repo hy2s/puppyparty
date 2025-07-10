@@ -74,7 +74,7 @@ const App = () => {
                                 <MainBanner />
                                 <BestProducts />
                                 <Sale />
-                                {/* <Categori /> */}
+                                <Categori />
                                 <Footer />
                             </>
                         }
@@ -83,6 +83,7 @@ const App = () => {
                         path="/"
                         element={
                             <>
+                                <Navigation />
                                 <Cart
                                     cartItem={cartItem}
                                     updateCount={updateCartItemCount}
