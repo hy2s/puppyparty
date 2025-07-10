@@ -1,15 +1,3 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.scss";
-import MainBanner from "./components/MainBanner";
-import Navigation from "./components/Navigation";
-import Categori from "./components/Categori";
-import Cart from "./components/Cart";
-import Footer from "./components/Footer";
-import { useState } from "react";
-import Sale from "./components/Sale";
-import EventSection from "./components/EventSection";
-import ProductPage from "./components/ProductPage";
-
 import BestProducts from "./components/BestProducts";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
