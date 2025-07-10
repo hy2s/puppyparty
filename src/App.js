@@ -11,7 +11,9 @@ import Sale from "./components/Sale";
 import EventSection from "./components/EventSection";
 import ProductPage from "./components/ProductPage";
 
+
 import BestProducts from "./components/BestProducts";
+
 
 const App = () => {
     // 장바구니에 담긴 상품 목록 상태 관리
