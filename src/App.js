@@ -7,7 +7,9 @@ import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import { useState } from "react";
 import Sale from "./components/Sale";
-import InstaReview from "./components/InstaReview";
+import EventSection from "./components/EventSection";
+import ProductPage from "./components/ProductPage";
+
 
 const App = () => {
     // 장바구니에 담긴 상품 목록 상태 관리
@@ -74,7 +76,9 @@ const App = () => {
                                 <MainBanner />
                                 <Sale />
                                 <Categori />
+                                <EventSection/>
                                 <Footer />
+                                
                             </>
                         }
                     />
@@ -91,9 +95,11 @@ const App = () => {
                             </>
                         }
                     /> 
-                  
+        {/* 상품 상세페이지 */}
+          <Route path="/product/:id" element={<ProductPage />} />
       </Routes>
-            <InstaReview/> 
+            
+           
       </div>
         </BrowserRouter>
     );
