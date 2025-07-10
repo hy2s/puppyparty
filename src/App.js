@@ -66,7 +66,7 @@ const App = () => {
         <BrowserRouter>
             <div id="App">
                 <Routes>
-                    {/* <Route
+                    <Route
                         path="/"
                         element={
                             <>
@@ -74,11 +74,11 @@ const App = () => {
                                 <MainBanner />
                                 <BestProducts />
                                 <Sale />
-                                {/* <Categori /> */}
+                                <Categori />
                                 <Footer />
                             </>
                         }
-                    /> */}
+                    />
                     <Route
                         path="/"
                         element={
