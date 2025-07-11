@@ -11,7 +11,6 @@ import Sale from "./components/Sale";
 import EventSection from "./components/EventSection";
 import ProductPage from "./components/ProductPage";
 import BestProducts from "./components/BestProducts";
-
 const App = () => {
     // 장바구니에 담긴 상품 목록 상태 관리 및 새로고침 유지
     const [cartItem, setCartItem] = useState(() => {
@@ -36,11 +35,11 @@ const App = () => {
             if (temp) {
                 // 이미 존재하는 상품이면 count만 1 증가시켜서 업데이트
                 newItem = prev.map((j) => {
-                    return j.id === item.id ? { ...j, count: j.count + 1 } : j;
+                    return j.id === item.id ? { ...j, count: j.count + item.count } : j;
                 });
             } else {
                 // 새 상품이면 count: 1로 추가
-                newItem = [...prev, { ...item, count: 1 }];
+                newItem = [...prev, item];
             }
             return newItem;
         });
@@ -74,11 +73,6 @@ const App = () => {
         <BrowserRouter>
             <div id="App">
                 {/* 로고 눌렀을 시 메인홈 이동 하기 위해서 네비게이션 컴포넌트 위치 맨 위로 올립니다 */}
-          />
-          <Route
-            path="/cart"
-            element={
-              <>
                 <Navigation />
                 <Routes>
                     <Route
@@ -109,7 +103,7 @@ const App = () => {
                         }
                     />
                     {/* 상품 상세페이지 */}
-                    <Route path="/product/:id" element={<ProductPage />} />
+                    <Route path="/product/:id" element={<ProductPage onAddCart={handleAddToCart}/>} />
                 </Routes>
                 <Footer />
             </div>
