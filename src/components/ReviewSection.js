@@ -50,14 +50,13 @@ const ReviewSection = () => {
 
   return (
     <section className="review-section">
-      <h2>리뷰 3</h2>
+      <h2>Review</h2>
       <div className="summary">
         <div className="average-rating">
           <span className="star">★</span>
           <span className="score">5.0</span>
         </div>
         <div className="satisfaction">
-          <span className="stars">★★★★★</span>
           <p>구매자의 100%가 이 상품에 만족했어요</p>
         </div>
       </div>
@@ -81,32 +80,34 @@ const ReviewSection = () => {
       <hr />
 
       <div className="add-review">
-        <h3>리뷰 추가하기</h3>
-        <input
-          type="text"
-          name="user"
-          placeholder="이름을 입력하세요"
-          value={newReview.user}
-          onChange={handleInputChange}
-        />
-        <select
-          name="rating"
-          value={newReview.rating}
-          onChange={handleInputChange}
-        >
-          {[5, 4, 3, 2, 1].map((num) => (
-            <option key={num} value={num}>
-              {'★'.repeat(num)}
-            </option>
-          ))}
-        </select>
+        <h3>리뷰 작성하기</h3>
+        <div className='add-box'>
+          <input
+            type="text"
+            name="user"
+            placeholder="이름을 입력하세요"
+            value={newReview.user}
+            onChange={handleInputChange}
+          />
+          <select
+            name="rating"
+            value={newReview.rating}
+            onChange={handleInputChange}
+          >
+            {[5, 4, 3, 2, 1].map((num) => (
+              <option key={num} value={num}>
+                {'★'.repeat(num)}
+              </option>
+            ))}
+          </select>
+        </div>
         <textarea
           name="content"
           placeholder="리뷰 내용을 입력하세요"
           value={newReview.content}
           onChange={handleInputChange}
         />
-        <button onClick={addReview}>리뷰 추가하기</button>
+        <button onClick={addReview}>리뷰 작성하기</button>
       </div>
     </section>
   );

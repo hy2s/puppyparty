@@ -20,6 +20,8 @@
   .best-title {
     h1 {
       font-family: 'yg-jalnan'; 
+      font-weight: normal;
+      letter-spacing: -0.02rem;
       font-size: 4.5rem;
       @include mobile {
         font-size: 3.5rem;

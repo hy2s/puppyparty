@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'yg-jalnan';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
-    font-weight: normal;
+    letter-spacing: 0.03em; /* 자간 약간 띄우기 */
     font-style: normal;
 }
 
@@ -45,11 +45,9 @@
 
 body {
     font-family: 'NanumSquareNeo', sans-serif;
-    font-weight: normal;
 }
 
 .head-font {
     font-family: 'yg-jalnan', sans-serif;
-    font-weight: normal;
 }
 

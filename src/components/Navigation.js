@@ -16,6 +16,7 @@ const Navigation = () => {
     <nav>
       <img 
         // onClick={()=>{navigate('/')}}
+        className="nav-logo"
         src={`${process.env.PUBLIC_URL}/images/HeaderLogo.png`}
         alt="PuppyParty 상단 로고"
       />
@@ -43,8 +44,8 @@ const Navigation = () => {
       )}
       {/* <div onClick={()=>{navigate('/cart')}}> */}
       <div className="headerIcon">
-        <LuShoppingCart />
         <FiSearch />
+        <LuShoppingCart />
         <IoMenu 
           className="menuIcon"
           onClick={sideMenu}
