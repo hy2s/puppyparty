@@ -11,7 +11,6 @@ import Sale from "./components/Sale";
 import EventSection from "./components/EventSection";
 import ProductPage from "./components/ProductPage";
 import BestProducts from "./components/BestProducts";
-
 const App = () => {
     // 장바구니에 담긴 상품 목록 상태 관리 및 새로고침 유지
     const [cartItem, setCartItem] = useState(() => {
@@ -74,11 +73,6 @@ const App = () => {
         <BrowserRouter>
             <div id="App">
                 {/* 로고 눌렀을 시 메인홈 이동 하기 위해서 네비게이션 컴포넌트 위치 맨 위로 올립니다 */}
-          />
-          <Route
-            path="/cart"
-            element={
-              <>
                 <Navigation />
                 <Routes>
                     <Route
@@ -116,5 +110,4 @@ const App = () => {
         </BrowserRouter>
     );
 };
-
 export default App;

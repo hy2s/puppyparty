@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import data from "../asset/category.json"; // ① JSON 전체 가져오기
-import Navigation from "./Navigation";
 import ProductTopSection from "./ProductTopSection";
 import ProductTabs from "./ProductTabs";
 
@@ -21,7 +20,7 @@ const ProductPage = () => {
     return (
         <div id="product-page">
             {/* ④ 상품 객체를 prop으로 전달 */}
-            <ProductTopSection product={product} />
+            <ProductTopSection product={product}/>
             <ProductTabs product={product} />
         </div>
     );
