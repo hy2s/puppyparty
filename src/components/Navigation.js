@@ -3,12 +3,11 @@ import { FiSearch } from "react-icons/fi";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom";
-import { useEffect, useState, useRef } from "react";
+import { useState } from "react";
 
 const Navigation = () => {
     // 모바일 버전에서 메뉴 아이콘 클릭시 세로 메뉴 나오는 함수
     const [isOpen, setIsOpen] = useState(false);
-    const menuRef = useRef(null);
     const sideMenu = () => {
         setIsOpen((prev) => !prev);
     };

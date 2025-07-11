@@ -2,7 +2,7 @@ import { LuShoppingCart } from "react-icons/lu";
 import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa";
 import { FaRegTrashAlt } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Cart = ({ cartItem, updateCount, onDelete }) => {
