@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import data from "../asset/category.json"; // ① JSON 전체 가져오기
 import ProductTopSection from "./ProductTopSection";
 import ProductTabs from "./ProductTabs";
@@ -7,7 +7,6 @@ const flattenProducts = data.flatMap((set) => set.products); // ② 모든 상�
 
 const ProductPage = ({onAddCart}) => {
     const { id } = useParams(); // ③ URL 파라미터
-    const navigate = useNavigate();
     const product = flattenProducts.find((p) => p["product-ID"] === id);
 
     if (!product) {
@@ -22,7 +21,6 @@ const ProductPage = ({onAddCart}) => {
         <div id="product-page">
             {/* ④ 상품 객체를 prop으로 전달 */}
             <ProductTopSection product={product} onAddCart={onAddCart} />
-            <ProductTopSection product={product}/>
             <ProductTabs product={product} />
         </div>
     );

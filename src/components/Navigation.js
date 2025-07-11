@@ -16,7 +16,7 @@ const Navigation = () => {
         <nav>
             <Link to="/">
             <img
-                // onClick={()=>{navigate('/')}}
+                className="nav-logo"
                 src={`${process.env.PUBLIC_URL}/images/HeaderLogo.png`}
                 alt="PuppyParty 상단 로고"
             />
@@ -43,13 +43,10 @@ const Navigation = () => {
                     <li>커플 의류</li>
                 </ul>
             )}
-            <div
-                onClick={() => {
-                    navigate("/cart");
-                }}
-            >
                 <div className="headerIcon">
-                    <LuShoppingCart />
+                    <LuShoppingCart onClick={() => {
+                    navigate("/cart");
+                }}/>
                     <FiSearch />
                     <IoMenu
                         className="menuIcon"
@@ -57,7 +54,6 @@ const Navigation = () => {
                         aria-label="toggle menu"
                     />
                 </div>
-            </div>
         </nav>
     );
 };

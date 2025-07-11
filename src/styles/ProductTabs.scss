@@ -1,7 +1,5 @@
 .product-tabs {
-  // background-color: #fafafa;
   margin: 5rem 0;
-  padding: 2rem;
   font-size: 2rem;
   .tab-buttons {
     display: flex;
@@ -18,7 +16,10 @@
       border-right: 1px solid #ddd;
       cursor: pointer;
       color: #444;
-
+      @include tablet {
+        font-size: 1.5rem;
+      }
+      
       &:last-child {
         border-right: none;
       }
@@ -33,12 +34,14 @@
   }
 
   .tab-content {
-    padding: 5rem;
+    padding: 5rem 15rem;
     font-size: 1rem;
     color: #333;
-    min-height: 200px;
-    @include mobile {
-      padding: 5rem 0;
+    img {
+      width: 100%;
+    }
+    @include tablet {
+      padding: 3rem 0;
     }
   }
 }

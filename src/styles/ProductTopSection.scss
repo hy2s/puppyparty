@@ -36,13 +36,16 @@
         font-size: 3.5rem;
         font-weight: bolder;
         margin: 1rem 0;
+        @include tablet {
+          font-size: 3rem;
+        }
       }
       .best {
         color: #fff;
         font-size: 20px;
         font-weight: bold;
         border-radius: 30px;
-        background-color: var(--color-sub2);
+        background-color: var(--color-sub1);
         padding: 1rem 2rem;
       }
     }
@@ -50,6 +53,9 @@
       font-size: 2rem;
       color: #666;
       margin-bottom: 1rem;
+      @include tablet {
+        font-size: 1.5rem;
+      }
     }
 
     .rating {
@@ -166,7 +172,9 @@
         border: 1px solid var(--color-main);
         background-color: var(--color-main2);
         color: var(--color-main);
-
+        @include tablet {
+          font-size: 2rem;
+        }
         &:hover {
           background-color: var(--color-main2) 3;
         }
@@ -175,7 +183,9 @@
       .buy {
         background-color: var(--color-main);
         color: var(--color-main2);
-
+        @include tablet {
+          font-size: 2rem;
+        }
         &:hover {
           background-color: var(--color-main);
         }

@@ -6,12 +6,20 @@
   }
   margin-top: 5rem;
   width: calc(360px * 4);
+  min-width: 400px;
+  overflow-y: hidden;
   @include tablet{
     width: 100%;
     height: 615px;
   }
   display: flex;
   flex-direction: row;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   @include tablet{
     flex-direction: column;
   }
@@ -25,6 +33,7 @@
 //카드섹션 scss
 #cardsection{
   width: 360px;
+  height: 550px;
   @include tablet{
     width: 768px;
     height: 220px;
@@ -36,11 +45,11 @@
   @include mobile{
     width: 100%;
     position: sticky;
-    top: 0;
     left: 0;
   }
   padding: 2rem;
   border-radius: 20px 0 0 20px;
+  background-color: var(--color-sub2);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -52,13 +61,13 @@
     padding: 2rem;
   }
   .card-btn{
-    background-color: black;
     font-family: 'NanumSquareNeoLight';
     font-weight: bolder;
     display: inline-block;
     padding: 1rem 2rem;
     border-radius: 20px;
     background-color: var(--color-main2);
+    color: var(--color-sub2);
     @include tablet{
       display: none;
     }
@@ -77,14 +86,12 @@
     padding-top: 1rem;
     font-family: 'NanumSquareNeoLight';
     font-size: 20px;
-    line-height: 1.5;
     @include tablet{
       word-break: normal;
     }
   }
   .card-icon{
-    padding: 2rem;
-    font-size: 120px;
+    font-size: 130px;
     @include tablet{
       display: flex;
       align-items: center;
@@ -178,15 +185,9 @@
   .card-cart{
     background-color: var(--color-sub2);
   }
-  .card-btn {
-    color: var(--color-sub2);
-  }
 }
 .even{
   .card-cart{
     background-color: var(--color-sub1);
-  }
-  .card-btn {
-    color: var(--color-sub1);
   }
 }

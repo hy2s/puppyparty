@@ -5,13 +5,18 @@ import ReturnExchangeInfo from './ReturnExchangeInfo';
 
 const TABS = ['상품정보', '구매후기', '문의사항', '구매안내'];
 
-const ProductTabs = () => {
+const ProductTabs = ({product}) => {
 const [activeTab, setActiveTab] = useState('상품정보');
-
+  console.log(product);
   const renderContent = () => {
     switch (activeTab) {
       case '상품정보':
-        return <p ><img src='/image/review.png"},' alt='review'/></p>;
+        return (
+        <img
+          src={`${process.env.PUBLIC_URL}/images/detail/${product["product-ID"]}-detail.jpg`}
+          alt="상품 상세 이미지"
+        />
+      );
       case '구매후기':
         return <ReviewSection/>
       case '문의사항':

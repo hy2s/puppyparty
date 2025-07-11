@@ -56,7 +56,6 @@ const ProductTopSection = ({ product, onAddCart }) => {
                     </div>
                     <span>{totalPrice.toLocaleString()}원</span>
                 </div>
-
                 <div className="total">
                     <p>총 상품금액 (수량):</p>{" "}
                     <span className="count">
@@ -65,7 +64,6 @@ const ProductTopSection = ({ product, onAddCart }) => {
                 </div>
                 </>
                 )}
-
                 <div className="btn-box">
                     <button
                         className="cart"
@@ -84,8 +82,6 @@ const ProductTopSection = ({ product, onAddCart }) => {
                 </div>
             </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 export default ProductTopSection;
