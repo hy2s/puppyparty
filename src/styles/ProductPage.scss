@@ -1,18 +1,11 @@
-// #product-page{
-//   max-width: 1500px;
-//   margin: 0 auto;
-//   padding: 2rem;
-
-//   @include mobile{
-//     padding: 1rem;
-//   }
-
-//   h2 {
-  
-//     margin-bottom: 1rem;
-//   }
-
-//   p {
-//     color: #555;
-//   }
-// }
+#product-page{
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 60px;
+  @include tablet{
+    padding: 0 30px;
+  }
+  @include mobile{
+    padding: 0 15px;
+  }
+}

@@ -1,4 +1,3 @@
-*{font-family: 'NanumSquareNeoExtraBold';}
 nav{
   color: var(--color-font);
   position: relative;
@@ -18,12 +17,18 @@ nav{
     @include mobile{
     padding: 0 15px;
     }
+  .nav-logo {
+    @include mobile {
+      width: 120px;
+    }
+  }
   .headerMenu{
+    font-family: 'NanumSquareNeo';
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 7rem;
     font-size: 20px;
     font-weight: bolder;
     @include tablet{
@@ -31,34 +36,25 @@ nav{
     }
   }
   .toggleMenu{
-    width: 335px;
-    height: 1133px;
+    padding: 3rem;
     position: absolute;
-    top: 3rem;
-    right: 6rem;
+    top: 10rem;
+    right: 2rem;
     z-index: 10;
     background-color: var(--color-bg);
+    border-radius: 20px;
     text-align: center;
-    @include tablet{
-      width: 250px;
-      height: 750px;
-    }
-    @include mobile{
-      width: 200px;
-      height: 350px;
-    }
     .closeIcon{
       cursor: pointer;
       position: absolute;
-      top: 5px;
-      right: 5px;
-      font-size: 20px;
+      top: 10px;
+      right: 10px;
+      font-size: 25px;
     }
     h1{
       margin: 1rem auto;
       padding: 4rem;
       font-size: 40px;
-      font-weight: bolder;
       border-bottom: 1px solid black;
       @include tablet{
         font-size: 30px;
@@ -81,14 +77,14 @@ nav{
   .headerIcon{
     cursor: pointer;
     display: flex;
-    gap: 1.5rem;
+    gap: 3rem;
     font-size: 35px;
     font-weight: bolder;
     .menuIcon{
-      opacity: 0;
+      display: none;
       @include tablet{
         outline: none;
-        opacity: 1;
+        display: block;
       }
     }
   }

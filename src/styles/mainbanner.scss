@@ -130,9 +130,9 @@
     }
     h1 {
       font-family: 'yg-jalnan';
-      font-size: 3vw;
       font-weight: normal;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.02rem;
+      font-size: 3vw;
       line-height: 1.3;
       @include tablet {
         font-size: 4vw;

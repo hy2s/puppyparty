@@ -13,7 +13,6 @@ const ProductInquiry = () => {
       <p className="description">
         상품에 대해 궁금한 점을 해결해 드립니다.
       </p>
-      <hr />
       <div className="inquiry-list">
         {inquiries.length === 0 ? (
           <p className="no-inquiry">게시물이 없습니다.</p>
@@ -25,7 +24,6 @@ const ProductInquiry = () => {
           ))
         )}
       </div>
-      <hr />
       <div className="write-button-wrapper">
         <button className="write-button" onClick={handleWriteClick}>
           작성하기

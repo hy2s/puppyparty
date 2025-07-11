@@ -34,7 +34,6 @@ const ProductTopSection = ({ product }) => {
                     <div className="price">{price.toLocaleString()}원</div>
                     <CiShare2 />
                 </div>
-
                 {/* 이하 수량·옵션·버튼 로직 동일 */}
             </div>
         </div>
