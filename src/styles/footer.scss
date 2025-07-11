@@ -33,6 +33,9 @@ footer {
         display: flex;
         gap: 2rem;
         margin-bottom: 5rem;
+        li {
+            font-family: "NanumSquareNeoLight", sans-serif;
+        }
         @include mobile {
             display: block;
             li {
@@ -43,6 +46,7 @@ footer {
     .inf {
         li {
             margin: 2rem 0;
+            font-family: "NanumSquareNeoLight", sans-serif;
         }
     }
     .two {

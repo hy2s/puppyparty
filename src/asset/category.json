@@ -12,7 +12,7 @@
                 "description": "반짝이 원단과 부드러운 밴드로 편안하게 착용 가능한 꼬깔모자",
                 "price": 3500,
                 "count": 1,
-                "filename": "party1-1.jpg",
+                "filename": "party1-1.png",
                 "image": "/images/party/party1-1.png"
             },
             {
@@ -22,7 +22,7 @@
                 "description": "극세사 소재에 말랑한 리본 포인트. 파티룩 완성 아이템",
                 "price": 6500,
                 "count": 1,
-                "filename": "party2-1.jpg",
+                "filename": "party2-1.png",
                 "image": "/images/party/party2-1.png"
             },
             {
@@ -32,7 +32,7 @@
                 "description": "'Happy Birthday' 문구가 담긴 파티용 벽걸이 장식 세트",
                 "price": 4000,
                 "count": 1,
-                "filename": "party3-1.jpg",
+                "filename": "party3-1.png",
                 "image": "/images/party/party3-1.png"
             }
         ]
