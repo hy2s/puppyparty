@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/puppyparty/static/css/main.1ca2e9a3.css",
-    "main.js": "/puppyparty/static/js/main.208e4ea8.js",
+    "main.js": "/puppyparty/static/js/main.a98ca94c.js",
     "static/media/slide-1.png": "/puppyparty/static/media/slide-1.cccbf4a7104fd771fcb4.png",
     "static/media/slide-4.png": "/puppyparty/static/media/slide-4.26d000b5ad0f5dcc29bc.png",
     "static/media/slide-3.png": "/puppyparty/static/media/slide-3.0a5c28388d69b5013e7c.png",
@@ -12,10 +12,10 @@
     "static/media/slick.woff": "/puppyparty/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/puppyparty/index.html",
     "main.1ca2e9a3.css.map": "/puppyparty/static/css/main.1ca2e9a3.css.map",
-    "main.208e4ea8.js.map": "/puppyparty/static/js/main.208e4ea8.js.map"
+    "main.a98ca94c.js.map": "/puppyparty/static/js/main.a98ca94c.js.map"
   },
   "entrypoints": [
     "static/css/main.1ca2e9a3.css",
-    "static/js/main.208e4ea8.js"
+    "static/js/main.a98ca94c.js"
   ]
 }
