@@ -17,7 +17,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="two">
-                    <img src="/images/logo.png" />
+                    <img src={`${process.env.PUBLIC_URL}/images/logo.png`} />
                     <p>© 2025 (Puppy Party). All rights reserved.</p>
                 </div>
             </div>
