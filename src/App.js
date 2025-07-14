@@ -1,5 +1,5 @@
 import CardItem from "./asset/category.json";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import MainBanner from "./components/MainBanner";
 import Navigation from "./components/Navigation";
@@ -70,7 +70,7 @@ const App = () => {
         });
     };
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div id="App">
                 {/* 로고 눌렀을 시 메인홈 이동 하기 위해서 네비게이션 컴포넌트 위치 맨 위로 올립니다 */}
                 <Navigation />
@@ -107,7 +107,7 @@ const App = () => {
                 </Routes>
                 <Footer />
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 export default App;
